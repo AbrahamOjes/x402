@@ -4,9 +4,9 @@
   "description": "Example of x402 payments with browser wallet integration",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"pnpm dev:server\" \"pnpm dev:client\"",
-    "dev:server": "tsx watch server/index.ts",
-    "dev:client": "vite",
+    "dev": "node init && concurrently \"pnpm dev:server\" \"pnpm dev:client\"",
+    "dev:server": "node init && tsx watch server/index.ts",
+    "dev:client": "node init && vite",
     "install:all": "pnpm install && cd server && pnpm install && cd ../client && pnpm install",
     "preview": "cd client && pnpm preview"
   },
@@ -33,4 +33,4 @@
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   }
-} 
+}

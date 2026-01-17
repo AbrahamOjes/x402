@@ -5,9 +5,9 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/cjs/index.d.ts",
   "scripts": {
-    "start": "tsx --env-file=.env index.ts",
-    "build": "tsup",
-    "build:paywall": "tsx src/paywall/build.ts",
+    "start": "node init && tsx --env-file=.env index.ts",
+    "build": "node init && tsup",
+    "build:paywall": "node init && tsx src/paywall/build.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "watch": "tsc --watch",
