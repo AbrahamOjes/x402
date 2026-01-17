@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "build": "turbo run build",
+    "build": "node init && turbo run build",
     "lint": "turbo run lint",
     "format": "turbo run format",
     "lint:check": "turbo run lint:check",

@@ -5,10 +5,10 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "start": "tsx --env-file=.env index.ts",
+    "start": "node init && tsx --env-file=.env index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "tsup",
+    "build": "node init && tsup",
     "watch": "tsc --watch",
     "format": "prettier -c .prettierrc --write \"**/*.{ts,js,cjs,json,md}\"",
     "format:check": "prettier -c .prettierrc --check \"**/*.{ts,js,cjs,json,md}\"",

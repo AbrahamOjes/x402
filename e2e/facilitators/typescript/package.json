@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "tsx index.ts",
-    "dev": "tsx watch index.ts",
-    "build": "tsc",
+    "start": "node init && tsx index.ts",
+    "dev": "node init && tsx watch index.ts",
+    "build": "node init && tsc",
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit"

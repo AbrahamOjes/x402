@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "NODE_NO_WARNINGS=1 next dev -p ${PORT:-4021}",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && NODE_NO_WARNINGS=1 next dev -p ${PORT:-4021}",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "format": "prettier -c .prettierrc --write \"**/*.{ts,js,cjs,json,md}\"",
     "format:check": "prettier -c .prettierrc --check \"**/*.{ts,js,cjs,json,md}\"",
     "lint": "eslint . --ext .ts --fix",
